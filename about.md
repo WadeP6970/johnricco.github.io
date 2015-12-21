@@ -3,28 +3,8 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hello! My name is John. I live in Washington, DC and work as a research analyst for the IMF. Prior to joining the Fund, I studied economics at Duquesne University in Pittsburgh.
 
-Hello! My name is John. I live in Washington, DC and I work as a research analyst for the IMF. Prior to joining the Fund, I studied economics at Duquesne University in Pittsburgh.
+My interests include urban economics, mass transit, public finance, statistical programming, and data visualization. I've recently co-authored an [IMF working paper](https://www.imf.org/external/pubs/ft/wp/2015/wp15225.pdf) and produced a number of interactive data visualizations for the popular DC blog [Greater Greater Washington.](http://greatergreaterwashington.org/jricco/) For more information on my professional background and skills, you can find my resume here. 
 
-I'm interested in urban economics, statistical programming, and data visualization. 
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Feel free to reach out via email or [twitter](https://twitter.com/riccoja).
