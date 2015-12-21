@@ -7,9 +7,9 @@ title: About
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Hello! My name is John. I live in Washington, DC and I work as a research analyst for the IMF. Prior to joining the Fund, I studied economics at Duquesne University in Pittsburgh.
 
-There are currently two themes built on Poole:
+I'm interested in urban economics, statistical programming, and data visualization. 
 
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
