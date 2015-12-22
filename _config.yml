@@ -29,6 +29,5 @@ github:
   repo:              https://github.com/poole/poole
 
 pages_list:       
-  About: '/about'
-  Archive: '/archive'
-  Feed: '/atom.xml
+    About: '/about'
+    Research and projects: '/projects'
