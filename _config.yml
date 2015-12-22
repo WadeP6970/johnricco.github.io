@@ -5,8 +5,7 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
+title:               John Ricco
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
@@ -20,9 +19,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              John
+  url:               https://twitter.com/riccoja
+  email:             johnricco226@gmail.com
 
 # Custom vars
 version:             2.0.0
