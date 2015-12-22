@@ -3,4 +3,6 @@ layout: page
 title: Research and projects
 ---
 
-Hello!!!!
+Economic Research
+
+**Fiscal Consequences of Terrorism**, with Serhan Cevik
