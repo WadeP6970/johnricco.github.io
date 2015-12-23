@@ -23,14 +23,13 @@ low-income countries are more vulnerable to terrorism than those in
 countries that are richer and diversified.
 
 **[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**
-(Undergraduate thesis) Previous studies indicate that welfare benefits partially crowd out charity. This research,
+
+Previous studies indicate that welfare benefits partially crowd out charity. This research,
 however, does not present a thorough analysis of non-religious charities and does not
 disaggregate welfare benefits into specific programs. To address these two shortcomings, I
-exploit a provision of the 1996 welfare reform law to identify the causal impact of Food Stamps
-benefits on contributions to food-related charities. The results suggest that the crowd-out effect
+exploit a provision of the 1996 welfare reform law to identify the causal impact of food stamps on contributions to food-related charities. The results suggest that the crowd-out effect
 was between 7 and 16 cents on the dollar in counties with active food-related charities. This
 finding is robust to a variety of specifications. 
-
 
 **[Walk sheds by Metro
 line](https://johnricco.shinyapps.io/metro_walksheds/)**, with [Steve
@@ -41,3 +40,7 @@ are accessible by foot. It was featured at [Greater Greater
 Washington](http://greatergreaterwashington.org/post/26524/walkability-
 by-metro-line-graphed/), and I demoed the tool at [Metro Hack
 Night](https://www.washingtonpost.com/local/trafficandcommuting/transportation-techies-find-new-ways-to-make-metro-driving-easier/2015/10/24/07841846-67ae-11e5-8325-a42b5a459b1e_story.html). 
+
+**(Rent distributions in America's urban areas)[https://johnricco.shinyapps.io/Rents]**
+
+An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at online think thank [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/).
