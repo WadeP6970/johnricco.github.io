@@ -3,8 +3,8 @@ layout: page
 title: Research and projects 
 ---
 
-**[Fiscal Consequences of
-Terrorism](https://www.imf.org/external/pubs/ft/wp/2015/wp15225.pdf)**,
+**[Fiscal consequences of
+terrorism](https://www.imf.org/external/pubs/ft/wp/2015/wp15225.pdf)**,
 with Serhan Cevik
 
 This paper provides an empirical analysis of how the frequency and
@@ -21,6 +21,15 @@ are frequent and result in a large number of fatalities. Empirical
 findings also support the view that public finances in developing and
 low-income countries are more vulnerable to terrorism than those in
 countries that are richer and diversified.
+
+**[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**
+(Undergraduate thesis) Previous studies indicate that welfare benefits partially crowd out charity. This research,
+however, does not present a thorough analysis of non-religious charities and does not
+disaggregate welfare benefits into specific programs. To address these two shortcomings, I
+exploit a provision of the 1996 welfare reform law to identify the causal impact of Food Stamps
+benefits on contributions to food-related charities. The results suggest that the crowd-out effect
+was between 7 and 16 cents on the dollar in counties with active food-related charities. This
+finding is robust to a variety of specifications. 
 
 
 **[Walk sheds by Metro
