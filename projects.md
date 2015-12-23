@@ -41,6 +41,6 @@ Washington](http://greatergreaterwashington.org/post/26524/walkability-
 by-metro-line-graphed/), and I demoed the tool at [Metro Hack
 Night](https://www.washingtonpost.com/local/trafficandcommuting/transportation-techies-find-new-ways-to-make-metro-driving-easier/2015/10/24/07841846-67ae-11e5-8325-a42b5a459b1e_story.html). 
 
-**(Rent distributions in America's urban areas)[https://johnricco.shinyapps.io/Rents]**
+**[Rent distributions in America's urban areas](https://johnricco.shinyapps.io/Rents)**
 
-An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at online think thank [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/).
+An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/).
