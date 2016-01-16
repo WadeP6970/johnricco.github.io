@@ -22,6 +22,6 @@ Fortunately, Shawn Bucholtz of HUD took notice of my post and was kind enough to
 
 Embedded below is a graph with a subsample of some of America's largest urban areas. The full interactive version where you can choose from 40 urban areas is here. 
 
-<iframe src="https://cdn.rawgit.com/johnricco/fb0c35819069f5e8e9c7/raw/213b83eb53a52b572233c743fb2c54cda627a18f/cdf.html"; width=800; height=350;></iframe>
+<iframe src="https://cdn.rawgit.com/johnricco/fb0c35819069f5e8e9c7/raw/213b83eb53a52b572233c743fb2c54cda627a18f/cdf.html" width="800" height="350"></iframe>
 
 If you have any feedback or questions, feel free to reach out on [Twitter](https://twitter.com/riccoja).
