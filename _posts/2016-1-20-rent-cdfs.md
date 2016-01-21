@@ -27,7 +27,7 @@ enough to send me internal data that addresses all three of my concerns
 
 Embedded below is a graph with a subsample of some of America's largest
 urban areas. The full interactive version where you can choose from 40
-urban areas is here.
+urban areas is [here](https://johnricco.shinyapps.io/cdfs/).
 
 <iframe
 src="https://cdn.rawgit.com/johnricco/f11250fdb29725b4191f/raw/
