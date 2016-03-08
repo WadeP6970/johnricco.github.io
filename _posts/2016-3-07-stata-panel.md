@@ -11,9 +11,9 @@ can be frustrating but the long-run benefits are worth it, I think.
 One thing that is somewhat unintuitive in Stata is setting up a classic *i,t* panel dataset. That is, starting with an empty dataset and then
 producing something that looks like this:
 
-![My helpful screenshot](johnricco.github.io/assets/panel.png)
+![My helpful screenshot](http://s18.postimg.org/4406cpytl/panel.png)
 
-It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
+It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how we might combine and repeat vectors to do this, for example in R:
 
 ```R
 c <- c("Canada", "France", "Germany", "UK", "Italy", "Japan", "USA")
@@ -33,5 +33,3 @@ expand 5
 bysort country: gen year = 2010 + [_n-1]
 ```
 The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your data -- that is, it replaces each observation with *n* copies, where *n* is the time dimension of your data. In my example, that's 5 years for 2010-14. And the third line simply fills in your data with the time dimension, *by* each value of *i* using Stata's _n observation identifier. 
-
-Hope this is helpful!
