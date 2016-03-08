@@ -3,9 +3,9 @@ layout: post
 title: A simple solution for creating panel data from scratch in Stata 
 ---
 
-Recently I've been trying to put my entire workflow in Stata. This means
+Recently I've been trying to put my entire workflow into Stata. This means
 doing even the most elementary things -- like setting up the skeleton of
-a dataset -- in Stata, and not in Excel, however tempting it may be. It
+a dataset -- in Stata, and not in Excel, however tempting it may be for simple tasks. It
 can be frustrating but the long-run benefits are worth it, I think.
 
 One thing that is somewhat unintuitive in Stata is setting up the basics
@@ -14,7 +14,7 @@ producing something that looks like this:
 
 [pic]
 
-It's a task that comes naturally in object-oriented language. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
+It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
 
 ```R
 c <- c("Canada", "France", "Germany", "UK", "Italy", "Japan", "USA")
@@ -24,5 +24,13 @@ country <- unlist(lapply(c, function(x) rep(x, length(y))))
 year <- rep(y, length(c))
 df <- data.frame(country, year)
 ```
-It's less intuitive in Stata, however, because there's no obvious parallel for something 
+It's less intuitive in Stata, however, because there's no obvious parallel for these types of data structures. 
 
+Fortunately there's a simple (and elegent!) solution. Together, `expand` and `bysort` can produce what we're looking for. It goes like something this:
+
+```Stata
+import excel using "$home/countries.xlsx", firstrow clear
+expand 140
+bysort country: gen year = 2010 + [_n-1]
+```
+The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your
