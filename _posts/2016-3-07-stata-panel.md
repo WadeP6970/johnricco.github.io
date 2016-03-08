@@ -12,7 +12,7 @@ One thing that is somewhat unintuitive in Stata is setting up the basics
 of a panel dataset. That is, starting with an empty dataset and then
 producing something that looks like this:
 
-[pic]
+![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
 
 It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
 
@@ -28,9 +28,10 @@ It's less intuitive in Stata, however, because there's no obvious parallel for t
 
 Fortunately there's a simple (and elegent!) solution. Together, `expand` and `bysort` can produce what we're looking for. It goes like something this:
 
-```Stata
+```
 import excel using "$home/countries.xlsx", firstrow clear
-expand 140
+local 
+expand 5
 bysort country: gen year = 2010 + [_n-1]
 ```
-The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your
+The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your dat
