@@ -12,7 +12,7 @@ One thing that is somewhat unintuitive in Stata is setting up the basics
 of a panel dataset. That is, starting with an empty dataset and then
 producing something that looks like this:
 
-![My helpful screenshot]({{ site.url }}/assets/panel.jpg)
+![My helpful screenshot](johnricco.github.io/assets/panel.jpg)
 
 It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
 
