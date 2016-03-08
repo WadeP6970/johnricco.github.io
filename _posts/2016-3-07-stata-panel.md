@@ -12,7 +12,7 @@ One thing that is somewhat unintuitive in Stata is setting up the basics
 of a panel dataset. That is, starting with an empty dataset and then
 producing something that looks like this:
 
-![My helpful screenshot](johnricco.github.io/assets/panel.jpg)
+![My helpful screenshot](johnricco.github.io/assets/panel.png)
 
 It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how you might combine and repeat vectors to do this, for example in R:
 
@@ -33,7 +33,7 @@ import excel using "$home/countries.xlsx", firstrow clear
 expand 5
 bysort country: gen year = 2010 + [_n-1]
 ```
-The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your data -- that is, it replaces each observation with *n* copies, where *n* is the time dimension of your data. Here, that's 2010-14, or 5 years. And the third line simply fills in your data with the time dimension. 
+The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your data -- that is, it replaces each observation with *n* copies, where *n* is the time dimension of your data. In my example, that's 5 years for 2010-14. And the third line simply fills in your data with the time dimension, by each *i* value. 
 
-You could also adapt this 
+You could also adapt this for panels of greater 
 
