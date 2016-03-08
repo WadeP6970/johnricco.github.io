@@ -33,3 +33,5 @@ expand 5
 bysort country: gen year = 2010 + [_n-1]
 ```
 The first line reads in a list of the unique values of your *i* variable, in this case countries. You could just as easily enter them into the data editor. The second line *expands* your data -- that is, it replaces each observation with *n* copies, where *n* is the time dimension of your data. In my example, that's 5 years for 2010-14. And the third line simply fills in your data with the time dimension, *by* each value of *i* using Stata's _n observation identifier. 
+
+Hope this is helpful!
