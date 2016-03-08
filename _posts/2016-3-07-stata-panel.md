@@ -11,7 +11,7 @@ can be frustrating but the long-run benefits are worth it, I think.
 One thing that is somewhat unintuitive in Stata is setting up a classic *i,t* panel dataset. That is, starting with an empty dataset and then
 producing something that looks like this:
 
-![My helpful screenshot](http://s18.postimg.org/4406cpytl/panel.png)
+<a href='http://postimage.org/' target='_blank'><img src='http://s18.postimg.org/4406cpytl/panel.png' border='0' alt="panel" /></a><br /><a target='_blank' href='http://postimage.org/'>gifs upload</a><br /><br />
 
 It's a task that comes naturally in object-oriented languages. It's not difficult to imagine how we might combine and repeat vectors to do this, for example in R:
 
