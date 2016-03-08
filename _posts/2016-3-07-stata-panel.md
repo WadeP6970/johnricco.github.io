@@ -23,6 +23,6 @@ y <- 2010:2014
 country <- unlist(lapply(c, function(x) rep(x, length(y))))
 year <- rep(y, length(c))
 df <- data.frame(country, year)
-
 ```
+It's less intuitive in Stata, however, because there's no obvious parallel for something 
 
