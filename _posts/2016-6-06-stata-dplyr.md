@@ -9,11 +9,6 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 
 I'll be using the flights data from the nycflights13 package. It looks like this:
 
-
-
-First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
-
-Stata:
 ```
 keep if origin == "LGA"
 drop if month == 12
@@ -23,15 +18,15 @@ gen last = substr(tailnum, 6, 6)
   keep if last == "A"  
 ```
 
-R:
 ```R
-d %>% filter(origin == "LGA")                #1         
-d %>% filter(month != 12)                    #2
-d %>% filter(day > 5, day < 10)              #3
-d %>% slice(1:200)                           #4
-d %>% filter(substr(tailnum, 6, 6) == "A")   #5
+d %>% filter(origin == "LGA")
+d %>% filter(month != 12)
+d %>% filter(day > 5, day < 10)
+d %>% slice(1:200)
+d %>% filter(substr(tailnum, 6, 6) == "A")
 ```
 
+First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
 Next, let's look at subsetting on columns. Again, this is `keep`/`drop` logic in Stata, and the dplyr verb is `select`, much like how you `SELECT` columns in a SQL query.
 
