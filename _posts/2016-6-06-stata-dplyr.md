@@ -9,13 +9,7 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 
 I'll be using the flights data from the nycflights13 package. It looks like this:
 
-```R
-d %>% filter(origin == "LGA")
-d %>% filter(month != 12)
-d %>% filter(day > 5, day < 10)
-d %>% slice(1:200)
-d %>% filter(substr(tailnum, 6, 6) == "A")
-```
+
 
 First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
@@ -31,11 +25,11 @@ gen last = substr(tailnum, 6, 6)
 
 R:
 ```R
-d %>% filter(origin == "LGA")
-d %>% filter(month != 12)
-d %>% filter(day > 5, day < 10)
-d %>% slice(1:200)
-d %>% filter(substr(tailnum, 6, 6) == "A")
+d %>% filter(origin == "LGA")                #1         
+d %>% filter(month != 12)                    #2
+d %>% filter(day > 5, day < 10)              #3
+d %>% slice(1:200)                           #4
+d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 ```
 
 
