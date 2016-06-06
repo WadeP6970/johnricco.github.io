@@ -10,21 +10,23 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 I'll be using the flights data from the nycflights13 package. It looks like this:
 
 Stata
+
 ```
-keep if origin == "LGA"
-drop if month == 12
-keep if day > 5 & day < 10
-keep in 1/200 
-gen last = substr(tailnum, 6, 6)
+keep if origin == "LGA"            #1
+drop if month == 12                #2
+keep if day > 5 & day < 10         #3
+keep in 1/200                      #4
+gen last = substr(tailnum, 6, 6)   #5
   keep if last == "A"  
 ```
 R
+
 ```R
-d %>% filter(origin == "LGA")
-d %>% filter(month != 12)
-d %>% filter(day > 5, day < 10)
-d %>% slice(1:200)
-d %>% filter(substr(tailnum, 6, 6) == "A")
+d %>% filter(origin == "LGA")                #1
+d %>% filter(month != 12)                    #2
+d %>% filter(day > 5, day < 10)              #3
+d %>% slice(1:200)                           #4
+d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 ```
 
 First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
