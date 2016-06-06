@@ -9,7 +9,14 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 
 I'll be using the flights data from the nycflights13 package. It looks like this:
 
+```R
+c <- c("Canada", "France", "Germany", "UK", "Italy", "Japan", "USA")
+y <- 2010:2014
 
+country <- unlist(lapply(c, function(x) rep(x, length(y))))
+year <- rep(y, length(c))
+df <- data.frame(country, year)
+```
 
 First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
