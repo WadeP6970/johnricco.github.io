@@ -9,6 +9,7 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 
 I'll be using the flights data from the nycflights13 package. It looks like this:
 
+Stata:
 ```
 keep if origin == "LGA"
 drop if month == 12
@@ -17,7 +18,7 @@ keep in 1/200
 gen last = substr(tailnum, 6, 6)
   keep if last == "A"  
 ```
-
+R:
 ```R
 d %>% filter(origin == "LGA")
 d %>% filter(month != 12)
