@@ -7,10 +7,11 @@ I work in a field where most people do data munging with Stata. A lot of my coll
 
 For this type of person -- the marginally interested, somewhat offput Stata user -- I recommend learning dplyr. Its syntax is intuitive and concise enough that longtime Stata users don't think *why do I have to write all this code just to drop a variable??* So below, I've put together a list of examples that translate everyday Stata commands into dplyr. Of course, I recommend reading one or more of the many of dplyr tutorials out there for a complete treatment of all the things this package can do. But I hope this helps answer: how do I do [Stata thing] in R?
 
-I'll be using the flights data from the nycflights13 package. It looks like this:
+I'll be using the `flights` data from the nycflights13 package, and assigning it to a dataframe called "d".
+
+First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
 Stata
-
 ```
 keep if origin == "LGA"            #1
 drop if month == 12                #2
@@ -20,7 +21,6 @@ gen last = substr(tailnum, 6, 6)   #5
   keep if last == "A"  
 ```
 R
-
 ```R
 d %>% filter(origin == "LGA")                #1
 d %>% filter(month != 12)                    #2
@@ -29,8 +29,20 @@ d %>% slice(1:200)                           #4
 d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 ```
 
-First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
-
 Next, let's look at subsetting on columns. Again, this is `keep`/`drop` logic in Stata, and the dplyr verb is `select`, much like how you `SELECT` columns in a SQL query.
 
+Stata 
+```
+keep month day origin    #1
+drop tailnum flight      #2
+keep year-arr_delay      #3
+keep arr_*               #4
+```
 
+R
+```
+d %>% select(month, day, origin)    #1
+d %>% select(-tailnum, -flight)     #2
+d %>% select(year:arr_delay)        #3
+d %>% select(starts_with("arr_"))   #4
+```
