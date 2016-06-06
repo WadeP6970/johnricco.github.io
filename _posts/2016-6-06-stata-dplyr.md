@@ -11,7 +11,8 @@ I'll be using the `flights` data from the nycflights13 package, and assigning it
 
 First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
-Stata
+Stata:
+
 ```
 keep if origin == "LGA"            #1
 drop if month == 12                #2
@@ -20,7 +21,8 @@ keep in 1/200                      #4
 gen last = substr(tailnum, 6, 6)   #5
   keep if last == "A"  
 ```
-R
+R:
+
 ```R
 d %>% filter(origin == "LGA")                #1
 d %>% filter(month != 12)                    #2
@@ -31,7 +33,8 @@ d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 
 Next, let's look at subsetting on columns. Again, this is `keep`/`drop` logic in Stata, and the dplyr verb is `select`, much like how you `SELECT` columns in a SQL query.
 
-Stata 
+Stata:
+
 ```
 keep month day origin    #1
 drop tailnum flight      #2
@@ -39,7 +42,8 @@ keep year-arr_delay      #3
 keep arr_*               #4
 ```
 
-R
+R:
+
 ```
 d %>% select(month, day, origin)    #1
 d %>% select(-tailnum, -flight)     #2
