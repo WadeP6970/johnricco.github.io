@@ -15,22 +15,24 @@ First, some stuff on filtering observations. This is pretty straightforward. Sta
 
 Stata:
 ```
-keep if origin == "LGA"            #1
-drop if month == 12                #2
-keep if day > 5 & day < 10         #3
-keep in 1/200                      #4
-gen last = substr(tailnum, 6, 6)   #5
+keep if origin == "LGA"            //1
+drop if month == 12                //2
+keep if day > 5 & day < 10         //3
+keep in 1/200                      //4
+gen last = substr(tailnum, 6, 6)   //5
   keep if last == "A"  
 ```
 
 R:
 ```R
-d %>% filter(origin == "LGA")                #1
-d %>% filter(month != 12)                    #2
-d %>% filter(day > 5, day < 10)              #3
-d %>% slice(1:200)                           #4
-d %>% filter(substr(tailnum, 6, 6) == "A")   #5
+d %>% filter(origin == "LGA")                //1
+d %>% filter(month != 12)                    //2
+d %>% filter(day > 5, day < 10)              //3
+d %>% slice(1:200)                           //4
+d %>% filter(substr(tailnum, 6, 6) == "A")   //5
 ```
+
+
 Next, let's look at subsetting on columns. Again, this is keep/drop logic in Stata, and the dplyr verb is "select", much like how you *SELECT* columns in a SQL query.
 
 
