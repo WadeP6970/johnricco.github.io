@@ -9,7 +9,7 @@ For this type of person -- the marginally interested, somewhat offput Stata user
 
 I'll be using the `flights` data from the nycflights13 package, and assigning it to a dataframe called "d".
 
-First, some stuff on filtering observations. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
+First, some stuff on **filtering observations**. This is pretty straightforward. Stata captures this with "`keep`/`drop` if..." logic; with dplyr the verb is `filter`.
 
 Stata:
 
@@ -31,7 +31,7 @@ d %>% slice(1:200)                           #4
 d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 ```
 
-Next, let's look at subsetting on columns. Again, this is `keep`/`drop` logic in Stata, and the dplyr verb is `select`, much like how you `SELECT` columns in a SQL query.
+Next, let's look at **subsetting on columns**. Again, this is `keep`/`drop` logic in Stata, and the dplyr verb is `select`, much like how you `SELECT` columns in a SQL query.
 
 Stata:
 
@@ -44,9 +44,28 @@ keep arr_*               #4
 
 R:
 
-```
+```R
 d %>% select(month, day, origin)    #1
 d %>% select(-tailnum, -flight)     #2
 d %>% select(year:arr_delay)        #3
 d %>% select(starts_with("arr_"))   #4
 ```
+
+**Creating new variables?** This is `generate` in Stata, `mutate` with dplyr.
+
+Stata:
+
+```
+gen total_delay = dep_delay + arr_delay   #1
+gen first_letter = substr(origin, 1, 1)   #2
+gen flight_path = origin + "_" + dest     #3
+```
+
+R:
+
+```R
+d %>% mutate(total_delay = dep_delay + arr_delay)            #1
+d %>% mutate(first_letter = substr(origin, 1, 1))            #2
+d %>% mutate(flight_path = paste(origin, dest, sep = "_"))   #3
+```
+
