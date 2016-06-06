@@ -31,6 +31,6 @@ d %>% filter(day > 5, day < 10)              #3
 d %>% slice(1:200)                           #4
 d %>% filter(substr(tailnum, 6, 6) == "A")   #5
 ```
-Next, let's look at subsetting on columns. Again, this is keep/drop logic in Stata, and the dplyr verb is "select", much like how you SELECT columns in a SQL query.
+Next, let's look at subsetting on columns. Again, this is keep/drop logic in Stata, and the dplyr verb is "select", much like how you *SELECT* columns in a SQL query.
 
 
