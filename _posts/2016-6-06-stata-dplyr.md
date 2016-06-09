@@ -139,8 +139,8 @@ d %>%                                          #2
   summarise_each(min_d = min(distance),
                 (max_d = max(distance)
 d %>%                                          #3
-	group_by(origin) %>%
-	summarise(unique_dest = n_distinct(dest))
+  group_by(origin) %>%
+  summarise(unique_dest = n_distinct(dest))
   		        
 
 ```
