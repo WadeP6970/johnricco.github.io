@@ -88,7 +88,7 @@ d %>% rename(arrival_delay = arr_delay)   #1
 
 **Appending datasets**
 
-(Let's assume we have a second dataset, d1, that contains flight information for 2014 and contains the same variables.)
+(Let's assume we have a second dataset, `d1`, that contains flight information for 2014 and contains the same variables.)
 
 Stata:
 
@@ -102,10 +102,43 @@ R:
 d %>% bind_rows(d1)   #1
 ```
 
+ **Merging datasets**
  
+ Stata:
+ 
+ ```
+ 
+ ```
+ 
+ R:
+ 
+ ```
+ 
+ ```
 
+** Collapsing data **
 
+Stata:
 
+```
+collapse (mean) mean_delay = arr_delay, by(carrier)                  #1
+collapse (min) min_d = distance (max) max_d = distance, by(origin)   #2
+
+```
+
+R:
+
+```
+d %>%                                     #1
+  group_by(carrier) %>%
+  summarise(mean_delay mean(arr_delay))   
+d %>%                                     #2
+  group_by(origin) %>%
+  summarise_each(min_d = min(distance),
+  		        (max_d = max(distance)
+  		        
+
+```
 
 
 
