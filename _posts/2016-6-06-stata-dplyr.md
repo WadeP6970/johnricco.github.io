@@ -122,21 +122,25 @@ Stata:
 
 ```
 collapse (mean) mean_delay = arr_delay, by(carrier)   #1
-collapse (min) min_d = distance (max) ///   #2
+collapse (min) min_d = distance (max) ///             #2
   max_d = distance, by(origin)  
-
+egen unique_dest = group(dest), by(origin)            #3
+  collapse (max) unique_dest, by(origin)
 ```
 
 R:
 
 ```
-d %>%                                     #1
+d %>%                                          #1
   group_by(carrier) %>%
-  summarise(mean_delay mean(arr_delay))   
-d %>%                                     #2
+  summarise(mean_delay = mean(arr_delay))   
+d %>%                                          #2
   group_by(origin) %>%
   summarise_each(min_d = min(distance),
                 (max_d = max(distance)
+d %>%                                          #3
+	group_by(origin) %>%
+	summarise(unique_dest = n_distinct(dest))
   		        
 
 ```
