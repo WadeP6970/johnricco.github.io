@@ -121,8 +121,9 @@ d %>% bind_rows(d1)   #1
 Stata:
 
 ```
-collapse (mean) mean_delay = arr_delay, by(carrier)                  #1
-collapse (min) min_d = distance (max) max_d = distance, by(origin)   #2
+collapse (mean) mean_delay = arr_delay, by(carrier)   #1
+collapse (min) min_d = distance (max) ///   #2
+  max_d = distance, by(origin)  
 
 ```
 
@@ -135,7 +136,7 @@ d %>%                                     #1
 d %>%                                     #2
   group_by(origin) %>%
   summarise_each(min_d = min(distance),
-  		        (max_d = max(distance)
+                (max_d = max(distance)
   		        
 
 ```
