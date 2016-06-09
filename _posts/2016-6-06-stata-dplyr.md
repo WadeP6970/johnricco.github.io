@@ -74,15 +74,33 @@ d %>% mutate(flight_path = paste(origin, dest, sep = "_"))   #3
 Stata:
 
 ```
-rename arr_delay arrival_delay
+rename arr_delay arrival_delay   #1
+rename arr_* arrival_*           #2
 ```
 
 R:
 
 ```R
-d %>% rename(arrival_delay = arr_delay)
+d %>% rename(arrival_delay = arr_delay)   #1
 ```
 
+(Note: there's no good way to accomplish #2 using dplyr. A regex function applied over a vector of column names will do the trick, though.)
+
+**Appending datasets**
+
+(Let's assume we have a second dataset, d1, that contains flight information for 2014 and contains the same variables.)
+
+Stata:
+
+```
+append using d1   #1
+```
+
+R:
+
+```R
+d %>% bind_rows(d1)   #1
+```
 
  
 
