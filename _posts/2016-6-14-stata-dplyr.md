@@ -104,25 +104,27 @@ d %>% bind_rows(nycflights14)   #1
 
  **Merging datasets**
  
-Let's assume we have a flight-specific identifier, which we'll call `flight_id` and generate with in R with the code `d %>% mutate(flight_id = row_number())`. Let's also assume we have a few more datasets: `trip_details`, which has the same `flight_id` unique identifier and more variables like number of passengers and average ticket price; and `planes`, which has plane-specific information, for instance on age of the aircraft; and `pilots`, which has data on every pilot who has flown out of NYC in 2013.
+Let's assume we have a flight-specific identifier, which we'll call `flight_id` and generate with in R with the code `d %>% mutate(flight_id = row_number())`. Let's also assume we have a few more datasets: `trip_details`, which has the same `flight_id` unique identifier and more variables like number of passengers and average ticket price; and `planes`, which has plane-specific information, for instance on age of the aircraft.
 
 Stata:
 
 ```
- merge 1:1 flight_id using nycflights14, keep(1)       #1
- merge 1:1 flight_id using nycflights14, keep(1 3)     #2
- merge 1:1 flight_id using nycflights14, keep(1 2 3)   #3
+ merge 1:1 flight_id using trip_details, keep(1)       #1
+ merge 1:1 flight_id using trip_details, keep(1 3)     #2
+ merge 1:1 flight_id using trip_details, keep(1 2 3)   #3
+ merge m:1 tailnum using planes, keep(1 3)             #4
 ```
 
 R:
 
 ```R
- d %>% inner_join(nycflights14, by = "flight_id")   #1
- d %>% left_join(nycflights14, by = "flight_id")    #2
- d %>% outer_join(nycflights14, by = "flight_id")   #3
+ d %>% inner_join(trip_details, by = "flight_id")   #1
+ d %>% left_join(trip_details, by = "flight_id")    #2
+ d %>% full_join(trip_details, by = "flight_id")    #3
+ d %>% left_join(planes, by = "tailnum")            #4
 ```
 
-** Collapsing data **
+**Collapsing data**
 
 Stata:
 
@@ -136,7 +138,7 @@ egen unique_dest = group(dest), by(origin)            #3
 
 R:
 
-```
+```R
 d %>%                                          #1
   group_by(carrier) %>%
   summarise(mean_delay = mean(arr_delay))   
@@ -147,8 +149,6 @@ d %>%                                          #2
 d %>%                                          #3
   group_by(origin) %>%
   summarise(unique_dest = n_distinct(dest))
-  		        
-
 ```
 
 
