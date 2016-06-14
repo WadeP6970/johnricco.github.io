@@ -104,7 +104,7 @@ d %>% bind_rows(nycflights14)   #1
 
  **Merging datasets**
  
-Let's assume we have a flight-specific identifier, which we'll call `flight_id` and generate with in R with the code `d %>% mutate(flight_id = row_number())`. Let's also assume we have a few more datasets: `trip_details`, which has the same `flight_id` unique identifier and more variables like number of passengers and average ticket price; and `planes`, which has plane-specific information, for instance on age of the aircraft.
+Let's assume we have a flight-specific identifier, which we'll call `flight_id` and generate in R with the code `d %>% mutate(flight_id = row_number())`. Let's also assume we have a few more datasets: `trip_details`, which has the same `flight_id` unique identifier and more variables like number of passengers and average ticket price; and `planes`, which has plane-specific information, for instance on age of the aircraft.
 
 Stata:
 
