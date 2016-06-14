@@ -103,23 +103,24 @@ d %>% bind_rows(nycflights14)   #1
 ```
 
  **Merging datasets**
+ 
 Let's assume we have a flight-specific identifier, which we'll call `flight_id` and generate with in R with the code `d %>% mutate(flight_id = row_number())`. Let's also assume we have a few more datasets: `trip_details`, which has the same `flight_id` unique identifier and more variables like number of passengers and average ticket price; and `planes`, which has plane-specific information, for instance on age of the aircraft; and `pilots`, which has data on every pilot who has flown out of NYC in 2013.
 
- Stata:
- 
- ```
+Stata:
+
+```
  merge 1:1 flight_id using nycflights14, keep(1)       #1
  merge 1:1 flight_id using nycflights14, keep(1 3)     #2
  merge 1:1 flight_id using nycflights14, keep(1 2 3)   #3
- ```
- 
- R:
- 
- ```
+```
+
+R:
+
+```R
  d %>% inner_join(nycflights14, by = "flight_id")   #1
  d %>% left_join(nycflights14, by = "flight_id")    #2
  d %>% outer_join(nycflights14, by = "flight_id")   #3
- ```
+```
 
 ** Collapsing data **
 
