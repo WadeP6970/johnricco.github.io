@@ -86,6 +86,24 @@ d %>% rename(arrival_delay = arr_delay)   #1
 
 Note: there's no good way to accomplish #2 using dplyr. A regex function applied over a vector of column names will do the trick, though.
 
+**Sorting observations** 
+
+Stata:
+
+```
+sort air_time        #1
+sort air_time dest   #2
+gsort -air_time      #3
+```
+
+R:
+
+```R
+d %>% arrange(air_time)          #1
+d %>% arrange(air_time, dest)    #2
+d %>% arrange(-air_time)         #3
+```
+
 **Appending datasets**
 
 Let's assume we have a second dataset, `nycflights14`, that contains flight information for 2014 and contains the same variables.
