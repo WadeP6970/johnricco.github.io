@@ -22,6 +22,8 @@ findings also support the view that public finances in developing and
 low-income countries are more vulnerable to terrorism than those in
 countries that are richer and diversified.
 
+---
+
 **[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**
 
 Previous studies indicate that welfare benefits partially crowd out charity. This research,
@@ -30,6 +32,8 @@ disaggregate welfare benefits into specific programs. To address these two short
 exploit a provision of the 1996 welfare reform law to identify the causal impact of food stamps on contributions to food-related charities. The results suggest that the crowd-out effect
 was between 7 and 16 cents on the dollar in counties with active food-related charities. This
 finding is robust to a variety of specifications. 
+
+---
 
 **[Walk sheds by Metro
 line](https://johnricco.shinyapps.io/metro_walksheds/)**, with [Steve
@@ -41,6 +45,14 @@ Washington](http://greatergreaterwashington.org/post/26524/walkability-
 by-metro-line-graphed/), and I demoed the tool at [Metro Hack
 Night](https://www.washingtonpost.com/local/trafficandcommuting/transportation-techies-find-new-ways-to-make-metro-driving-easier/2015/10/24/07841846-67ae-11e5-8325-a42b5a459b1e_story.html). 
 
+---
+
 **[Rent distributions in America's urban areas](https://johnricco.shinyapps.io/Rents)**
 
-An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/).
+An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). A similar version of this tool, which uses household-level data and controls for number of bedrooms, can be found [here](https://johnricco.shinyapps.io/cdfs/).
+
+---
+
+**[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**
+
+Six gifs that show how Metro riders use each line over the course of a typical weekday.
