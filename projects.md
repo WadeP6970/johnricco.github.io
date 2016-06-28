@@ -53,6 +53,6 @@ An interactive data visualization of ZIP code-level median rents by city. It was
 
 ---
 
-**[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**
+**[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**, with Tarun Narasimhan
 
 Six gifs that show how Metro riders use each line over the course of a typical weekday.
