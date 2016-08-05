@@ -13,7 +13,7 @@ To do so, I used the R package `twitteR`. Here's how I did it. (Shout out to Sim
 
 **2) The Twitter account and API access**
 
-I created the actual account, @primaryguidebot, through Twitter's normal sign-up process. From there, I registered a Twitter app [here](apps.twitter.com). This where you'll find the credentials needed to programmatically interface with Twitter. More on that below.
+I created the actual account, @primaryguidebot, through Twitter's normal sign-up process. From there, I registered a Twitter app [here](http://apps.twitter.com). This where you'll find the credentials needed to programmatically interface with Twitter. More on that below.
 
 **3) The R script**
 
