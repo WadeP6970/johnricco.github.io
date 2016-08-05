@@ -9,7 +9,7 @@ To do so, I used the R package `twitteR`. Here's how I did it. (Shout out to Sim
 
 **1) The data**
 
-[Eli Dourado's](https://twitter.com/elidourado) website [primary.guide](primary.guide) aggregates pricing data from Befair into a simple table that answers the question: how likely is candidate X to win the US general election? Fortunately, his site includes a continuously-updated JSON file of candidate-probability pairs that can be accessed at any time. This is where my R script grabs its data from every time it runs.
+[Eli Dourado's](https://twitter.com/elidourado) website [primary.guide](https://primary.guide/) aggregates pricing data from Befair into a simple table that answers the question: how likely is candidate X to win the US general election? Fortunately, his site includes a continuously-updated JSON file of candidate-probability pairs that can be accessed at any time. This is where my R script grabs its data from every time it runs.
 
 **2) The Twitter account and API access**
 
