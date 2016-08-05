@@ -3,19 +3,19 @@ layout: post
 title: How I used R to program an election predicion market Twitter bot
 ---
 
-During this uniquely insane election cycle, my Twitter feed has been a mess of outrage and ill-advised hot takes. To counter that, I created a Twitter bot that routinely tweets out prediction market probabilities for the top candidates. These markets are good at quickly and accurately aggregating the latest information into observable odds, without the biases of punditry. 
+During this uniquely insane election cycle, my Twitter feed has been a mess of outrage and ill-advised hot takes. To counter that, I created a [Twitter bot](https://twitter.com/primaryguidebot) that routinely tweets out prediction market probabilities for the top candidates. These markets are good at quickly and accurately aggregating the latest information into observable odds, without the biases of punditry. 
 
-To do so, I used the R package twitteR. Here's how I did it. (Shout out to Simon Munzert's bot-building guide, which was a helpful reference.)
+To do so, I used the R package `twitteR`. Here's how I did it. (Shout out to Simon Munzert's [bot-building guide](http://www.r-datacollection.com/blog/Programming-a-Twitter-bot/), which was a helpful reference.)
 
-*1) The data*
+**1) The data**
 
-Eli Dourado's website primary.guide aggregates pricing data from Befair into a simple table that answers the question: how likely is candidate X to win the US general election? Fortunately, his site includes a continously-updated JSON file candidate-probability pairs that can be accessed at any time. This is where my R script grabs its data from every time it runs.
+[Eli Dourado's](https://twitter.com/elidourado) website [primary.guide](primary.guide) aggregates pricing data from Befair into a simple table that answers the question: how likely is candidate X to win the US general election? Fortunately, his site includes a continuously-updated JSON file of candidate-probability pairs that can be accessed at any time. This is where my R script grabs its data from every time it runs.
 
-*2) The Twitter account and API access*
+**2) The Twitter account and API access**
 
 I created the actual account, @primaryguidebot, through Twitter's normal sign-up process. From there, I registered a Twitter app at [link]. This where you'll find the credentials needed to programmatically interface with Twitter. More on that below.
 
-*3) The R script*
+**3) The R script**
 
 First, we need to load a few packages. `jsonlite` helps us parse the JSON data; `twitteR` gives us an interface to the Twitter API; and `dplyr` makes the small amount of data munging here simpler and easier to read (I'm a sucker for chaining code with %>%):
 
@@ -71,9 +71,9 @@ this_tweet <- paste0("Current probabilities:",
 tweet(this_tweet)
 ```
 
-If we run the entirety of this code, the account posts a tweet that looks like this:
+If we run the entirety of this code, the account posts a tweet [like this](https://twitter.com/primaryguidebot/status/761479359077224448).
 
-*4) The automation*
+**4) The automation**
 
 In order to turn this code into an actual Twitter bot, we need to make it tweet at regular intervals on its own. This can be accomplished with Windows Task Scheduler (or chron / launchd job with Mac). This stackoverflow post demonstrates how to do this, step-by-step.
 
