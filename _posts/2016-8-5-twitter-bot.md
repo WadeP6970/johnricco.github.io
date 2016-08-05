@@ -75,6 +75,6 @@ If we run the entirety of this code, the account posts a tweet [like this](https
 
 **4) The automation**
 
-In order to turn this code into an actual Twitter bot, we need to make it tweet at regular intervals on its own. This can be accomplished with Windows Task Scheduler (or chron / launchd job with Mac). [This post](https://trinkerrstuff.wordpress.com/2015/02/11/scheduling-r-tasks-via-windows-task-scheduler/) post demonstrates how to do this, step-by-step.
+In order to turn this code into an actual Twitter bot, we need to make it tweet at regular intervals on its own. This can be accomplished with Windows Task Scheduler (or chron / launchd job with Mac). [This post](https://trinkerrstuff.wordpress.com/2015/02/11/scheduling-r-tasks-via-windows-task-scheduler/) demonstrates how to do this, step-by-step.
 
 And that's it! It's a relatively straightfoward process. Hopefully this guide can help someone else create their own bot.
