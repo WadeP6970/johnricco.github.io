@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: How I used R to program an election predicion market Twitter bot
+title: How I used R to program an election prediction market Twitter bot
 ---
 
 During this uniquely insane election cycle, my Twitter feed has been a mess of outrage and ill-advised hot takes. To counter that, I created a [Twitter bot](https://twitter.com/primaryguidebot) that routinely tweets out prediction market probabilities for the top candidates. These markets are good at quickly and accurately aggregating the latest information into observable odds, without the biases of punditry. 
