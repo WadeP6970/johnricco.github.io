@@ -53,7 +53,7 @@ Then we clean up the data. That involves converting the probabilities to numbers
 d <- d %>%
   mutate(p = as.numeric(p)) %>%
   arrange(-p) %>%
-  mutate(text = paste0("-", candidate, ": ", prob, "%")
+  mutate(text = paste0("-", candidate, ": ", prob, "%"))
 ```
 
 Our `d$text` vector now contains information that looks like, for example, "-Donald Trump: 22.5%".
