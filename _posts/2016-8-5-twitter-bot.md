@@ -13,7 +13,7 @@ To do so, I used the R package `twitteR`. Here's how I did it. (Shout out to Sim
 
 **2) The Twitter account and API access**
 
-I created the actual account, @primaryguidebot, through Twitter's normal sign-up process. From there, I registered a Twitter app at [link]. This where you'll find the credentials needed to programmatically interface with Twitter. More on that below.
+I created the actual account, @primaryguidebot, through Twitter's normal sign-up process. From there, I registered a Twitter app [here](apps.twitter.com). This where you'll find the credentials needed to programmatically interface with Twitter. More on that below.
 
 **3) The R script**
 
@@ -47,7 +47,7 @@ d <- data.frame(candidate = names(json),
 
 (The probabilities are returned as strings; that's why I bother to specify stringsAsFactors = F.)
 
-Then we clean up the data. That involves converting the probabilities to numbers, sorting them, and generating a concatened column of formatted candidate-probability pairs for our tweet:
+Then we clean up the data. That involves converting the probabilities to numbers, sorting them, and generating a concatenated column of formatted candidate-probability pairs for our tweet:
 
 ```R
 d <- d %>%
@@ -75,6 +75,6 @@ If we run the entirety of this code, the account posts a tweet [like this](https
 
 **4) The automation**
 
-In order to turn this code into an actual Twitter bot, we need to make it tweet at regular intervals on its own. This can be accomplished with Windows Task Scheduler (or chron / launchd job with Mac). This stackoverflow post demonstrates how to do this, step-by-step.
+In order to turn this code into an actual Twitter bot, we need to make it tweet at regular intervals on its own. This can be accomplished with Windows Task Scheduler (or chron / launchd job with Mac). [This post](https://trinkerrstuff.wordpress.com/2015/02/11/scheduling-r-tasks-via-windows-task-scheduler/) post demonstrates how to do this, step-by-step.
 
 And that's it! It's a relatively straightfoward process. Hopefully this guide can help someone else create their own bot.
