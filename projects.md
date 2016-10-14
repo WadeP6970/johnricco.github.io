@@ -36,7 +36,11 @@ finding is robust to a variety of specifications.
 ---
 
 **[@everylotphilly](https://twitter.com/everylotphilly)**
-A twitter bot that posts images of every single property in Philadelphia. The bot is an instance of Neil Freeman's [everylot Python library](https://github.com/fitnr/everylotbot), which combines tax records, APIs from Google and Twitter, and cloud computing to create, [in his words](http://fakeisthenewreal.org/everylot/): >>a totalizing view of city. Google has cars, cameras, and computation; the City has tax clerks, history and legal authority. These two mapping systems are vast and difficult to visualize. By pairing them, the bots reveal moments of disharmony in the two approaches. 
+
+A twitter bot that posts images of every single property in Philadelphia. The bot is an instance of Neil Freeman's [everylot Python library](https://github.com/fitnr/everylotbot), which combines tax records, APIs from Google and Twitter, and cloud computing to create, [in his words](http://fakeisthenewreal.org/everylot/): 
+
+>>a totalizing view of city. Google has cars, cameras, and computation; the City has tax clerks, history and legal authority. These two mapping systems are vast and difficult to visualize. By pairing them, the bots reveal moments of disharmony in the two approaches. 
+
 It will take nearly 21 years to cover the entire city. 
 
 ---
