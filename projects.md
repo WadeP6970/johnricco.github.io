@@ -1,5 +1,6 @@
 ---
 layout: page 
+title: 
 ---
 ### Research
 
@@ -21,6 +22,7 @@ are frequent and result in a large number of fatalities. Empirical
 findings also support the view that public finances in developing and
 low-income countries are more vulnerable to terrorism than those in
 countries that are richer and diversified.
+
 
 **[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**
 
@@ -49,9 +51,11 @@ A Twitter bot that posts images of every single property in Philadelphia. The bo
 
 This account was profiled at [Philly Voice](http://www.phillyvoice.com/twitter-account-perfect-philly-property-nerds/). It will take nearly 21 years to cover the entire city. 
 
+
 **[@philly_permits](https://twitter.com/philly_permits)**
 
 A Twitter bot that helps Philly-area urbanists and real estate junkies keep up with new development. Using APIs from Philadelphia L&I, Google, and Twitter, it tweets out maps, images, and project descriptions for every new construction building permit issued by the city. 
+
 
 **[Walk sheds by Metro
 line](https://johnricco.shinyapps.io/metro_walksheds/)**, with [Steve
@@ -63,9 +67,11 @@ Washington](http://greatergreaterwashington.org/post/26524/walkability-
 by-metro-line-graphed/), and I demoed the tool at [Metro Hack
 Night](https://www.washingtonpost.com/local/trafficandcommuting/transportation-techies-find-new-ways-to-make-metro-driving-easier/2015/10/24/07841846-67ae-11e5-8325-a42b5a459b1e_story.html). 
 
+
 **[Rent distributions in America's urban areas](https://johnricco.shinyapps.io/cdfs/)**
 
-An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). 
+An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). 	
+
 
 **[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**, with Tarun Narasimhan
 
