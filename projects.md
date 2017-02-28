@@ -1,6 +1,5 @@
 ---
 layout: page 
-title: Research, projects, and writing 
 ---
 
 ## Research
@@ -37,13 +36,15 @@ finding is robust to a variety of specifications.
 
 ---
 
+## Selected personal projects and writing
+
 **[@everylotphilly](https://twitter.com/everylotphilly)**
 
 A twitter bot that posts images of every single property in Philadelphia. The bot is an instance of Neil Freeman's [everylot Python library](https://github.com/fitnr/everylotbot), which combines tax records, APIs from Google and Twitter, and cloud computing to create, [in his words](http://fakeisthenewreal.org/everylot/): 
 
 >a totalizing view of city. Google has cars, cameras, and computation; the City has tax clerks, history and legal authority. These two mapping systems are vast and difficult to visualize. By pairing them, the bots reveal moments of disharmony in the two approaches. 
 
-It will take nearly 21 years to cover the entire city. 
+This account was profiled at [Philly Voice](http://www.phillyvoice.com/twitter-account-perfect-philly-property-nerds/). It will take nearly 21 years to cover the entire city. 
 
 ---
 
@@ -68,3 +69,5 @@ An interactive data visualization of ZIP code-level median rents by city. It was
 **[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**, with Tarun Narasimhan
 
 Six gifs that show how Metro riders use each line over the course of a typical weekday.
+
+
