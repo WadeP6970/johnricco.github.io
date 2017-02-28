@@ -37,7 +37,13 @@ finding is robust to a variety of specifications.
 
 ---
 
-### Selected personal projects and writing
+### Writing samples
+
+I blog occasionally for the DC-area urbanism website [Greater Greater Washington](https://ggwash.org/contributors/jricco). I've explored topics like housing production, comparative land use policy, and transit construction costs in a conversational and explanatory tone. My posts have been cited by think tanks such as the [Urban Institute](http://www.urban.org/sites/default/files/publication/83656/2000907-strategies-for-increasing-housing-supply-in-high-cost-cities-dc-case-study_1.pdf) and [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). 
+
+---
+
+### Selected personal projects
 
 **[@everylotphilly](https://twitter.com/everylotphilly)**
 
@@ -76,5 +82,6 @@ An interactive data visualization of ZIP code-level median rents by city. It was
 **[Animated gifs of station-level Metro ridership](http://greatergreaterwashington.org/post/30414/on-most-days-this-many-people-use-your-metro-station/)**, with Tarun Narasimhan
 
 Six gifs that show how Metro riders use each line over the course of a typical weekday.
+
 
 
