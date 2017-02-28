@@ -1,8 +1,9 @@
 ---
 layout: page 
+title: Research and projects
 ---
 
-## Research
+### Research
 
 **[Fiscal consequences of
 terrorism](https://www.imf.org/external/pubs/ft/wp/2015/wp15225.pdf)**,
@@ -36,15 +37,21 @@ finding is robust to a variety of specifications.
 
 ---
 
-## Selected personal projects and writing
+### Selected personal projects and writing
 
 **[@everylotphilly](https://twitter.com/everylotphilly)**
 
-A twitter bot that posts images of every single property in Philadelphia. The bot is an instance of Neil Freeman's [everylot Python library](https://github.com/fitnr/everylotbot), which combines tax records, APIs from Google and Twitter, and cloud computing to create, [in his words](http://fakeisthenewreal.org/everylot/): 
+A Twitter bot that posts images of every single property in Philadelphia. The bot is an instance of Neil Freeman's [everylot Python library](https://github.com/fitnr/everylotbot), which combines tax records, APIs from Google and Twitter, and cloud computing to create, [in his words](http://fakeisthenewreal.org/everylot/): 
 
 >a totalizing view of city. Google has cars, cameras, and computation; the City has tax clerks, history and legal authority. These two mapping systems are vast and difficult to visualize. By pairing them, the bots reveal moments of disharmony in the two approaches. 
 
 This account was profiled at [Philly Voice](http://www.phillyvoice.com/twitter-account-perfect-philly-property-nerds/). It will take nearly 21 years to cover the entire city. 
+
+---
+
+**[@philly_permits](https://twitter.com/philly_permits)**
+
+A Twitter bot that helps Philly-area urbanists and real estate junkies keep up with new development. Using APIs from Philadelphia L&I, Google, and Twitter, it tweets out maps, images, and project descriptions for every new construction building permit issued by the city. 
 
 ---
 
@@ -60,9 +67,9 @@ Night](https://www.washingtonpost.com/local/trafficandcommuting/transportation-t
 
 ---
 
-**[Rent distributions in America's urban areas](https://johnricco.shinyapps.io/Rents)**
+**[Rent distributions in America's urban areas](https://johnricco.shinyapps.io/cdfs/)**
 
-An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). A similar version of this tool, which uses household-level data and controls for number of bedrooms, can be found [here](https://johnricco.shinyapps.io/cdfs/).
+An interactive data visualization of ZIP code-level median rents by city. It was featured at [Greater Greater Washington](http://greatergreaterwashington.org/post/28904/not-all-the-housing-in-a-region-costs-the-same-despite-what-headlines-imply/) and at [City Observatory](http://cityobservatory.org/you-need-more-than-one-number-to-understand-housing-affordability/). 
 
 ---
 
