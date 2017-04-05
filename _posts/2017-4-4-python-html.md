@@ -3,7 +3,7 @@ layout: post
 title: Using Python to scrape HTML tables with merged cells
 ---
 
-The python library `pandas` makes it easy to scrape HTML tables from the web. Its `read_html()` method is very straightfoward and, for most tables, does a great job. It reads a page's tables directly into memory as a list of pandas dataframes. 
+The python library `pandas` makes it easy to scrape HTML tables from the web. Its `read_html()` method is very straightfoward and, for most tables, does a great job. It reads a page's tables directly into memory as a list of dataframes. 
 
 For example, say we wanted to scrape the Flow of Funds table found on [this page](https://www.federalreserve.gov/apps/fof/DisplayTable.aspx?t=f.105). We could do the following: 
 
@@ -16,9 +16,9 @@ fof.to_csv("fof.csv", header = False, index = False)
 
 ...which scrapes the table then saves it as a CSV which ends up looking like this:
 
-(fof_csv.png)
+![alt text](https://raw.githubusercontent.com/johnricco/johnricco.github.io/master/assets/fof_csv.png)
 
-However, not all tables are this simple. What if the table has cells that are merged, as is common in multi-level column titles? Take the first table on [this page](https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html) for example. It has a hierarchical column title strucuture, with complicated relationships between headers, subheaders, and even sub-subheaders.
+Perfect! But not all tables are this simple. What if the table has cells that are merged, as is common in multi-level column titles? Take the first table on [this page](https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html) for example. It has a hierarchical column title strucuture, with complicated relationships between headers, subheaders, and even sub-subheaders.
 
 (ssa.png)
 
@@ -26,9 +26,18 @@ Pandas does not handle this situation well. Specifically, it has no way of parsi
 
 ### A custom method to handle this 
 
-Fortunately it's not too difficult to approach this from scratch. The following class and method mimics the functionality of `read_html`, but can accurately parse merged cells: 
+Fortunately it's not too difficult to approach this from scratch. The following class and method mimics the functionality of `read_html`, with the added ability to accurately parse merged cells: 
 
 ```python
+import os
+import requests
+import urllib
+import math
+import copy
+import pandas as pd
+import numpy as np
+from bs4 import BeautifulSoup 
+
 class html_tables(object):
     
     def __init__(self, url):
@@ -65,7 +74,7 @@ class html_tables(object):
             
             for row in self.tables_html[n].find_all("tr"):
                 
-                # Skip row if its blank
+                # Skip row if it's blank
                 if len(row.find_all(["td", "th"])) == 0:
                     next
                 
@@ -134,7 +143,7 @@ class html_tables(object):
         return(self.tables)
 ```
 
-The gist is that it uses `BeautifulSoup` to parse the HTML, loops over each to record any `colspan` and `rowspan` attributes, and then makes note of these when filling in data for following cells.
+The gist is that it uses `BeautifulSoup` to parse the HTML, loops over each cell to record any `colspan` and `rowspan` attributes, and then makes note of these when filling in data for following cells.
 
 Let's say we wanted to try this with that SSA table from above. We would do the following:
 
@@ -149,4 +158,4 @@ The resulting CSV now has the correct positions for each header cell:
 
 (ssa_csv.png)
 
-Not the prettiest table, but most importantly it contains the correct positional information, and could easily be beautified in Excel by actually merging the cells. 
+Not the prettiest table, but it contains the correct positional information, and could easily be beautified in Excel by actually merging the cells. 
