@@ -20,7 +20,7 @@ fof.to_csv("fof.csv", header = False, index = False)
 
 Perfect! But not all tables are this simple. What if the table has cells that are merged, as is common in multi-level column titles? Take the first table on [this page](https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html) for example. It has a hierarchical column title strucuture, with complicated relationships between headers, subheaders, and even sub-subheaders.
 
-(ssa.png)
+![alt text](https://raw.githubusercontent.com/johnricco/johnricco.github.io/master/assets/ssa.png)
 
 Pandas does not handle this situation well. Specifically, it has no way of parsing the `rowspan` and `colspan` HTML attributes that determine the dimensions of the cells. If we try to use `read_html` on this type of table, the result will be an unusable mess -- often skipping the column headers entirely. 
 
@@ -34,7 +34,7 @@ import requests
 import urllib
 import math
 import copy
-import pandas as pd
+import pandas as pd	
 import numpy as np
 from bs4 import BeautifulSoup 
 
@@ -156,6 +156,6 @@ first_table.to_csv("ssa.csv", header = False, index = False)
 
 The resulting CSV now has the correct positions for each header cell:
 
-(ssa_csv.png)
+![ssa_csv](https://raw.githubusercontent.com/johnricco/johnricco.github.io/master/assets/ssa_csv.png)
 
 Not the prettiest table, but it contains the correct positional information, and could easily be beautified in Excel by actually merging the cells. 
