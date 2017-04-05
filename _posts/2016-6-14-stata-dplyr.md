@@ -162,8 +162,8 @@ d %>%                                          #1
   summarise(mean_delay = mean(arr_delay))   
 d %>%                                          #2
   group_by(origin) %>%
-  summarise_each(min_d = min(distance),
-                (max_d = max(distance))
+  summarise(min_d = min(distance),
+            max_d = max(distance))
 d %>%                                          #3
   group_by(origin) %>%
   summarise(unique_dest = n_distinct(dest))
