@@ -67,8 +67,7 @@ class html_tables(object):
             # Create dataframe
             df = pd.DataFrame(index = range(0, n_rows), columns = range(0, n_cols))
             
-			# Create list to store rowspan values -- an 
-			# index telling us which columns to skip
+			# Create list to store rowspan values 
             skip_index = [0 for i in range(0, n_cols)]
 			
             # Start by iterating over each row in this table...
