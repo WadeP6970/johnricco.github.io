@@ -18,7 +18,7 @@ fof.to_csv("fof.csv", header = False, index = False)
 
 (fof_csv.png)
 
-However, not all tables are this simple. What if the table has cells that are merged, as is common in multi-level column titles? Take the first table on [this page](https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html) for example. It has a hierarchical column title strucuture, with headers and subheaders.
+However, not all tables are this simple. What if the table has cells that are merged, as is common in multi-level column titles? Take the first table on [this page](https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html) for example. It has a hierarchical column title strucuture, with complicated relationships between headers, subheaders, and even sub-subheaders.
 
 (ssa.png)
 
@@ -58,8 +58,6 @@ class html_tables(object):
             
             # Create dataframe
             df = pd.DataFrame(index = range(0, n_rows), columns = range(0, n_cols))
-            if self.indent_dict is not None: 
-                indents = []
             
             # Start by iterating over each row in this table...
             row_counter = 0
@@ -80,7 +78,6 @@ class html_tables(object):
                     col_dim_counter = -1
                     row_dim_counter = -1
                     col_counter = -1
-                    indent_recorded = False
                     this_skip_index = copy.deepcopy(skip_index)
                     
                     for col in columns:
@@ -130,19 +127,26 @@ class html_tables(object):
                 
                 # Adjust column skipping index
                 skip_index = [i - 1 if i > 0 else i for i in this_skip_index]
-            
-            # Add indents to dataframe
-            if self.indent_dict is not None: 
-                df = df.assign(indent = indents)
-            
+
             # Append dataframe to list of tables
             self.tables.append(df)
         
         return(self.tables)
 ```
 
-The gist is that it uses `BeautifulSoup` to parse the HTML, loops over each to record any `colspan` and `rowspan attributes`, and then recursively looks those up when filling in data for following cells.
+The gist is that it uses `BeautifulSoup` to parse the HTML, loops over each to record any `colspan` and `rowspan` attributes, and then makes note of these when filling in data for following cells.
 
-Let's say we wanted to try this  
+Let's say we wanted to try this with that SSA table from above. We would do the following:
 
+```python
+ssa_url = "https://www.ssa.gov/policy/docs/statcomps/supplement/2015/5h.html"
+ssa = html_tables(ssa_url)
+first_table = ssa.read()[0]
+first_table.to_csv("ssa.csv", header = False, index = False)
+```
 
+The resulting CSV now has the correct positions for each header cell:
+
+(ssa_csv.png)
+
+Not the prettiest table, but most importantly it contains the correct positional information, and could easily be beautified in Excel by actually merging the cells. 
