@@ -46,9 +46,8 @@ class html_tables(object):
         self.r        = requests.get(self.url)
         self.url_soup = BeautifulSoup(self.r.text)
         
-    def read(self, remove_footnotes = True):
+    def read(self):
         
-        self.remove_footnotes = remove_footnotes
         self.tables      = []
         self.tables_html = self.url_soup.find_all("table")
         
@@ -68,10 +67,12 @@ class html_tables(object):
             # Create dataframe
             df = pd.DataFrame(index = range(0, n_rows), columns = range(0, n_cols))
             
-            # Start by iterating over each row in this table...
-            row_counter = 0
+			# Create list to store rowspan values -- an 
+			# index telling us which columns to skip
             skip_index = [0 for i in range(0, n_cols)]
-            
+			
+            # Start by iterating over each row in this table...
+			row_counter = 0
             for row in self.tables_html[n].find_all("tr"):
                 
                 # Skip row if it's blank
@@ -118,12 +119,6 @@ class html_tables(object):
                         # Get cell contents  
                         cell_data = col.get_text()
                         
-                        # Parse out footnotes
-                        if self.remove_footnotes:
-                            footnote = col.find(["sup", "sub"])
-                            if footnote is not None:
-                                cell_data = cell_data[0: -len(footnote.get_text())]
-                                
                         # Insert data into cell
                         df.iat[row_counter, col_counter] = cell_data
 
