@@ -140,8 +140,8 @@ class html_tables(object):
 The gist what's going on here: 
 * First we parse the HTML using `BeautifulSoup`, finding all tables, then all rows within each table, then each cell within each row. 
 * Then when we're looping over each of these cells, we check to see if there are any `colspan` and `rowspan` attributes associated with the cell -- this tells us the dimensions of the cell. In spreadsheet terms, you might think of a `rowspan` value of 2 corresponding to a cell being merged with the cell below it.
-..* The `colspan` information is easy to use. If we register a `colspan` value greater than 1, we skip that number of columns before we start filling in the next cell. 
-..* The `rowspan` information is a bit trickier. If we register a `rowspan` value greater than 1, we store it in a list ("`skip_index`") where each element corresponds to a column in our table. When the loop is filling in data for each cell, it first checks to see if there's a nonzero value in this column's `skip_index`; if that's true, it skips this column. With every row iteration, we increment the nonzero `skip_index` elemnets by -1 until it's back to zero. 
+	* The `colspan` information is easy to use. If we register a `colspan` value greater than 1, we skip that number of columns before we start filling in the next cell. 
+	* The `rowspan` information is a bit trickier. If we register a `rowspan` value greater than 1, we store it in a list ("`skip_index`") where each element corresponds to a column in our table. When the loop is filling in data for each cell, it first checks to see if there's a nonzero value in this column's `skip_index`; if that's true, it skips this column. With every row iteration, we increment the nonzero `skip_index` elemnets by -1 until it's back to zero. 
 
 Let's say we wanted to try this with that SSA table from above. We would do the following:
 
