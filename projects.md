@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: Research
+title: Work samples
 ---
 
 **[No Buck for the Bang: Revisiting the Military-Growth Nexus](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063375)**, _Empirica_, with Serhan Cevik
@@ -56,12 +56,6 @@ A Twitter bot that posts images of every single property in Philadelphia. The bo
 >a totalizing view of city. Google has cars, cameras, and computation; the City has tax clerks, history and legal authority. These two mapping systems are vast and difficult to visualize. By pairing them, the bots reveal moments of disharmony in the two approaches. 
 
 This account was profiled at [Philly Voice](http://www.phillyvoice.com/twitter-account-perfect-philly-property-nerds/). It will take nearly 21 years to cover the entire city. 
-
----
-
-**[@philly_permits](https://twitter.com/philly_permits)**
-
-A Twitter bot that helps Philly-area urbanists and real estate junkies keep up with new development. Using APIs from Philadelphia L&I, Google, and Twitter, it tweets out maps, images, and project descriptions for every new construction building permit issued by the city. 
 
 ---
 
