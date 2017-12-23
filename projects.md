@@ -3,6 +3,8 @@ layout: page
 title: Work samples
 ---
 
+** **
+
 **[No Buck for the Bang: Revisiting the Military-Growth Nexus](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063375)**, _Empirica_, with Serhan Cevik
 
 This paper investigates the empirical relationship between military spending and economic growth in a large panel of advanced and developing countries over the period 1984–2014, with a particular focus on whether the growth impact of military expenditures varies with the type and level of security threats. Although there is extensive literature on the military-growth nexus, there is still no consensus on the nature and magnitude of this relationship. Using an expansive dataset and controlling for country-specific effects and potential endogeneity, we revisit this issue and reach two firm conclusions. First, military spending has no statistically significant direct (positive) effect on growth. Second, the nature and level of security threats do not alter the relationship between military spending and growth. Overall, the empirical results documented in the study suggest that military spending is simply not important or large enough in most countries to have a meaningful impact on growth.
