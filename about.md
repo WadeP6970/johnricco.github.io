@@ -3,8 +3,8 @@ layout: page
 title: About me
 ---
 
-Hello! My name is John. I live in Philadelphia and do data work for the Public Policy Initiative at Wharton. In the past I've worked at the IMF, and at a data consultancy in Pittsburgh.
+Hello! My name is John. I live in Philadelphia and do tax modeling for the Penn Wharton Budget Model. In the past I've worked at the IMF, and at a data consultancy in Pittsburgh.
 
-My interests include public policy and statistical programming. I'm especially passionate about US urban policy -- specifically as it pertains to housing costs, mass transit, and neighborhood change. 
+I spend a lot of time thinking about public policy issues -- mostly related to taxation, housing policy, and gentrification. I also really, _really_ like to surf. 
 
 Feel free to reach out via [email](mailto:johnricco226@gmail.com) or [Twitter](https://twitter.com/riccoja).
