@@ -1,9 +1,7 @@
 ---
 layout: page 
-title: Work samples
+title: Hello
 ---
-
-# 
 
 # Media
 
