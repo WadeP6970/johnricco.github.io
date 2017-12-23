@@ -1,5 +1,6 @@
 ---
 layout: page 
+title: Work samples
 ---
 
 # Research
