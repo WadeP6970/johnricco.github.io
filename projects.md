@@ -1,9 +1,8 @@
 ---
 layout: page 
-title: Work samples
 ---
 
-** **
+# Research
 
 **[No Buck for the Bang: Revisiting the Military-Growth Nexus](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063375)**, _Empirica_, with Serhan Cevik
 
