@@ -3,9 +3,15 @@ layout: page
 title: Research
 ---
 
+**[No Buck for the Bang: Revisiting the Military-Growth Nexus](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063375)**, _Empirica_, with Serhan Cevik
+
+This paper investigates the empirical relationship between military spending and economic growth in a large panel of advanced and developing countries over the period 1984–2014, with a particular focus on whether the growth impact of military expenditures varies with the type and level of security threats. Although there is extensive literature on the military-growth nexus, there is still no consensus on the nature and magnitude of this relationship. Using an expansive dataset and controlling for country-specific effects and potential endogeneity, we revisit this issue and reach two firm conclusions. First, military spending has no statistically significant direct (positive) effect on growth. Second, the nature and level of security threats do not alter the relationship between military spending and growth. Overall, the empirical results documented in the study suggest that military spending is simply not important or large enough in most countries to have a meaningful impact on growth.
+
+---
+
 **[Fiscal consequences of
 terrorism](https://www.imf.org/external/pubs/ft/wp/2015/wp15225.pdf)**,
-with Serhan Cevik
+_IMF working paper series_, with Serhan Cevik
 
 This paper provides an empirical analysis of how the frequency and
 severity of terrorism affect government revenue and expenditure during
@@ -24,7 +30,7 @@ countries that are richer and diversified.
 
 ---
 
-**[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**
+**[Do food stamps crowd out contributions to food-related charities?](http://www.antolin-davies.com/theses/ricco.pdf)**, _Duquesne senior thesis_
 
 Previous studies indicate that welfare benefits partially crowd out charity. This research,
 however, does not present a thorough analysis of non-religious charities and does not
