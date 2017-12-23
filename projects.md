@@ -3,6 +3,16 @@ layout: page
 title: Work samples
 ---
 
+# 
+
+# Media
+
+**[Interactive tax calculator](http://www.wsj.com/graphics/republican-tax-plan-calculator/)**, _Wall Street Journal_
+
+I programmed an interactive tax calculator Javascript function for the Wall Street Journal. It shows readers how their personal tax situation changes under the Tax Cuts and Jobs Act. An earlier version of the calculator analyzed the bill as passed by the House of Representatives. 
+
+![alt text](https://raw.githubusercontent.com/johnricco/johnricco.github.io/master/assets/wsj.png)
+
 # Research
 
 **[No Buck for the Bang: Revisiting the Military-Growth Nexus](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3063375)**, _Empirica_, with Serhan Cevik
