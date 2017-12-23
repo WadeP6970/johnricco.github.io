@@ -1,7 +1,9 @@
 ---
 layout: page 
-title: Hello
+title: Work samples
 ---
+
+Below are some samples of work I've done, both professional and personal. 
 
 # Media
 
